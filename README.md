@@ -15,3 +15,7 @@
 ## 思维导图
 
 VSCODE安装markmap插件，编写markdown文件生成思维导图的html文件。安装open in browser插件打开html文件。
+
+## 论文十问
+
+![13](images/13.png)
