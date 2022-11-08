@@ -139,7 +139,7 @@ $$ T=\frac{(\Delta P_t,\dots,\Delta P_{t+L-1})}{\sum_{j=t}^{t+L-1}\|\Delta P_j \
 
 1. 本文分析了计算dense trajectory 各阶段的计算复杂度，实验表明计算光流最耗时，耗时第二多的是特征的提取(如果只提取MBH则可节约一半的特征提取耗时)，由于轨迹较密集所以存储特征也要花费不少时间。
 
-![19](\images/19.png)
+![19](images/19.png)
 
 #### 3.2.5 有无时空金字塔(spatio-temporal pyramids,STP)
 
