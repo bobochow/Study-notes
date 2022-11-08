@@ -11,6 +11,7 @@
 3. 双流网络.md
 4. 局部特征点.md
 5. two-stream-fusion.md
+6. dense trajectory.md
 
 ## 思维导图
 
