@@ -12,6 +12,8 @@
 4. 局部特征点.md
 5. two-stream-fusion.md
 6. dense trajectory.md
+7. iDT.md
+8. 运动检测.md
 
 ## 思维导图
 
