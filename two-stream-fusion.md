@@ -28,9 +28,11 @@
 在特征图层面做fusion,使得空间流和时间流的特征图在同一像素上产生的通道响应能联系起来。也就是将所有通道堆叠到一起，然后用一种滤波器学习各个通道间的联系，就像学习卷积核里的权重。
 
 1. Sum fusion
+
     $$ y^{sum}_{i,j,d}=x^{a}_{i,j,d}+x^{b}_{i,j,d} $$
 
 2. Max fusion
+
     $$y^{max}_{i,j,d}=\max\{x^{a}_{i,j,d}, x^{b}_{i,j,d} \} $$
 
 3. Concatenation fusion
