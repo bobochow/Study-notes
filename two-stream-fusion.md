@@ -29,31 +29,31 @@
 
 1. Sum fusion
 
-    $$ y^{sum}_{i,j,d}=x^{a}_{i,j,d}+x^{b}_{i,j,d} $$
+   $$ y^{sum}_{i,j,d}=x^{a}_{i,j,d}+x^{b}_{i,j,d} $$
 
 2. Max fusion
 
-    $$y^{max}_{i,j,d}=\max\{x^{a}_{i,j,d}, x^{b}_{i,j,d} \} $$
+   $$y^{max}_{i,j,d}=\max\{x^{a}_{i,j,d}, x^{b}_{i,j,d} \} $$
 
 3. Concatenation fusion
 
    - 将两层特征图做堆叠
 
-    $$y^{cat}=f^{cat}(x^{a},x^{b})
+   $$y^{cat}=f^{cat}(x^{a},x^{b})
     \\ y^{cat}_{i,j,2d}=x^{a}_{i,j,d} \\
     y^{cat}_{i,j,2d-1}=x^{b}_{i,j,d}$$
 
-4. Conv fusion
+1. Conv fusion
 
    - 将两层特征图做堆叠后做1x1x2D的卷积操作,输出一个D通道的融合特征图，从而在同一像素位置建模两张特征图的加权组合。
 
-   $$y^{conv}=y^{cat}*f +b \space\space\space\space ,\space f \in \R^{1\times1\times2D\times D},\space b\in \R^{D} $$
+   $$y^{conv}=y^{cat}*f +b \space\space\space\space ,\space f \in{\R^{1\times1\times2D\times D}} ,\space b\in{\R^{D}}  $$
 
-5. Bilinear fusion
+2. Bilinear fusion
 
    - 遍历两张特征图各个通道，对同一位置做外积运算，然后做一次sum pooling，缺点是计算复杂度过高。
 
-    $$ y^{bil}=\sum^{H}_{i}\sum^{W}_{j}x_{i,j}^{a}\otimes x^{b}_{i,j} \space ,\space y^{bil}\in \R^{D^{2}}$$
+   $$ y^{bil}=\sum^{H}_{i}\sum^{W}_{j}x_{i,j}^{a}\otimes x^{b}_{i,j} \space ,\space y^{bil}\in \R^{D^{2}}$$
 
 ### 2.2  Where to fuse the two streams spatially
 
