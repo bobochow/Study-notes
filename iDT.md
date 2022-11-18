@@ -41,10 +41,12 @@
 
     $$I_{t+1}=H_{3\times3}\times I_{t} \\
     \\
-    \begin{pmatrix}x_i^{'} \\ y_i^{'} \\ 1 \end{pmatrix} = \begin{pmatrix}h_{11} & h_{12} & h_{13} \\ h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33} \end{pmatrix} \begin{pmatrix}x_i \\ y_i \\ 1 \end{pmatrix}$$
+    \begin{pmatrix}x_i^{'} \\ y_i^{'} \\ 1 \end{pmatrix} = \begin{pmatrix}h_{11} & h_{12} & h_{13} \\ h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33} \end{pmatrix} \begin{pmatrix}x_i \\ y_i \\ 1 \end{pmatrix}
+    $$
 - 利用$H_{3\times3}$矩阵的逆即可得到校正(warp)后的第二帧图像$I_{t+1}^{wrap}$，用$I_{t}$和$I_{t+1}^{wrap}$即可计算出优化后的光流场。
 
-    $$      I_{t+1}^{warp}=H^{-1}_{3\times3}\times I_{t}    $$
+    $$I_{t+1}^{warp}=H^{-1}_{3\times3}\times I_{t}
+    $$
 
 #### 3.1.2 generate candidate matches
 
@@ -82,7 +84,11 @@
 - 然后根据good-features-to-track准则选择显著特征点的运动矢量，用于特征点匹配。
 - good-features-to-track：Shi-Tomasi 角点检测器，即改良的Harris角点检测。
 
-    $$R=det(M)-k((trace(M)))^2=\lambda_1\lambda_2-k(\lambda_1+\lambda_2)^2 $$ $$ R=min(\lambda_1,\lambda_2) $$
+    $$R=det(M)-k((trace(M)))^2=\lambda_1\lambda_2-k(\lambda_1+\lambda_2)^2 
+    $$
+
+    $$ R=min(\lambda_1,\lambda_2) 
+    $$
 
 ![25](images/25.png)
 
