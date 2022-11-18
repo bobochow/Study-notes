@@ -45,7 +45,8 @@
     $$
 - 利用$H_{3\times3}$矩阵的逆即可得到校正(warp)后的第二帧图像$I_{t+1}^{wrap}$，用$I_{t}$和$I_{t+1}^{wrap}$即可计算出优化后的光流场。
 
-    $$I_{t+1}^{warp}=H^{-1}_{3\times3}\times I_{t}
+    $$
+    I_{t+1}^{warp}=H^{-1}_{3\times3}\times I_{t}
     $$
 
 #### 3.1.2 generate candidate matches
