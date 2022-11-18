@@ -60,20 +60,19 @@
 5. 归一化：减少光照的影响。
 
    时空归一化：同一个通道内不同时空点的归一化。
-
    $$
-   \tilde{C}_{st}(x,y,z,n)=C(x,y,z,n)/maxV_{st}^n
+   \tilde C_{st}(x,y,z,n)=C(x,y,z,n)/maxV_{st}^n
    $$
    通道归一化：不同通道相同时空点的归一化。
 
    $$
-   \tilde{C}_{ch}(x,y,z,n)=C(x,y,z,n)/maxV_{ch}^{x,y,z}
+   \tilde C_{ch}(x,y,z,n)=C(x,y,z,n)/maxV_{ch}^{x,y,z}
    $$
 
 6. 轨迹池化：轨迹上所有点的值（已归一化）相加。
 
    $$
-   D(T_k,\tilde{C}_m^a)=\sum_{p=1}^{P}\tilde{C}_m^a([r_m\times x_p^k],[r_m\times y_p^k],z_p^k)\\
+   D(T_k,\tilde C_m^a)=\sum_{p=1}^{P}\tilde C_m^a([r_m\times x_p^k],[r_m\times y_p^k],z_p^k)\\
    ([r_m\times x_p^k],[r_m\times y_p^k],z_p^k)是当前感受野下轨迹点的相对位置\\
    T_k是轨迹
    $$
