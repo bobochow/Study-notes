@@ -27,37 +27,27 @@
 
 在特征图层面做fusion,使得空间流和时间流的特征图在同一像素上产生的通道响应能联系起来。也就是将所有通道堆叠到一起，然后用一种滤波器学习各个通道间的联系，就像学习卷积核里的权重。
 
-1. Sum fusion
+- Sum fusion
 
-   $$
-   y^{sum}_{i,j,d}=x^{a}_{i,j,d}+x^{b}_{i,j,d}
-   $$
+$$y^{sum}_{i,j,d}=x^{a}_{i,j,d}+x^{b}_{i,j,d}$$
 
-2. Max fusion
+- Max fusion
 
-   $$
-   y^{max}_{i,j,d}= \max\{x^{a}_{i,j,d}, x^{b}_{i,j,d}\}
-   $$
+$$y^{max}_{i,j,d}= \max\{x^{a}_{i,j,d}, x^{b}_{i,j,d}\}$$
 
-3. Concatenation fusion: 将两层特征图做堆叠
+- Concatenation fusion: 将两层特征图做堆叠
 
-   $$
-   y^{cat}=f^{cat}(x^{a},x^{b})\\
-   y^{cat}_{i,j,2d}=x^{a}_{i,j,d}\\
-   y^{cat}_{i,j,2d-1}=x^{b}_{i,j,d}
-   $$
+$$y^{cat}=f^{cat}(x^{a},x^{b})$$
+$$y^{cat}_{i,j,2d}=x^{a}_{i,j,d}$$
+$$y^{cat}_{i,j,2d-1}=x^{b}_{i,j,d}$$
 
-4. Conv fusion: 将两层特征图做堆叠后做1x1x2D的卷积操作,输出一个D通道的融合特征图，从而在同一像素位置建模两张特征图的加权组合。
+- Conv fusion: 将两层特征图做堆叠后做1x1x2D的卷积操作,输出一个D通道的融合特征图，从而在同一像素位置建模两张特征图的加权组合。
 
-   $$
-   y^{conv}=y^{cat}*f +b \space\space\space\space ,\space f \in{\R^{1\times1\times2D\times D}} ,\space b\in{\R^{D}}
-   $$
+$$y^{conv}=y^{cat}*f +b \space\space\space\space ,\space f \in{\R^{1\times1\times2D\times D}} ,\space b\in{\R^{D}}$$
 
-5. Bilinear fusion: 遍历两张特征图各个通道，对同一位置做外积运算，然后做一次sum pooling，缺点是计算复杂度过高。
+- Bilinear fusion: 遍历两张特征图各个通道，对同一位置做外积运算，然后做一次sum pooling，缺点是计算复杂度过高。
 
-   $$
-   y^{bil}=\sum^{H}_{i}\sum^{W}_{j}x_{i,j}^{a}\otimes x^{b}_{i,j}\space ,\space y^{bil}\in \R^{D^{2}}
-   $$
+$$y^{bil}=\sum^{H}_{i}\sum^{W}_{j}x_{i,j}^{a}\otimes x^{b}_{i,j}\space ,\space y^{bil}\in \R^{D^{2}}$$
 
 ### 2.2  Where to fuse the two streams spatially
 
