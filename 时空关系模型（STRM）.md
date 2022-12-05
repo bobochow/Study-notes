@@ -20,6 +20,8 @@
 
 （算是STRM的前置工作）
 
+![36](images/36.png)
+
 1. 特征提取：使用骨架网络将每一帧H\*W\*3的RGB图像转化为1\*D的特征向量。
 
 2. 动作对：视频中的每两帧组成一组动作对（因为一般来说，动作都是画面的变化，一帧图像不能表示一个动作，所以想到用两帧来表示）。
@@ -78,11 +80,23 @@
 
    （3）查询类相关性分类器：Query-class similarity classifier。
 
+![37](images/37.png)
+
 2. PLE：每一帧的特征图做self attention。
+
+![38](images/38.png)
+
 3. FLE：将特征图平均池化为1\*D后组合成L\*D（L帧的视频），输入一个全MLP网络。包含应用于D维度的MLP用于混合位置特征和一个跨D的MLP，用于混合空间信息。同时包含skip connection。
+
+![39](images/39.png)
+
 4. TRM：是Ω={2}的TRX。
+
+![40](images/40.png)
+
 5. Query-class similarity classifier：将PLE得到的H矩阵通过线性变化得到z向量，与查询集的z做相似度计算。
 
 ## 四、结果
 
 Kinetics: 91.2%, SSv2: 70.2%, HMDB: 81.3%, UCF101: 98.1%。
+![41](images/41.png)
