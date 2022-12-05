@@ -31,7 +31,7 @@
 
    动作对的支持集：
    $$
-   S^c=\{S_{km}^{c}:(1\leq k \leq K)\and{(m\in \Pi)}\}
+   S^c=\{S_{km}^{c}:(1\leq k \leq K)\wedge{(m\in \Pi)}\}
    $$
 
 3. 线性变换矩阵（作transformation，类似于attention中的Q/K/V）：
