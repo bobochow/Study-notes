@@ -17,6 +17,9 @@
 9. 轨迹池化深度卷积描述子（TDD）.md
 10. TSN.md
 11. TLE.md
+12. RAFT.md
+13. STRM.md
+14. ActionVLAD.md
 
 ## 思维导图
 
