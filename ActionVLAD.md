@@ -1,5 +1,7 @@
 # ActionVLAD
 
+> Rohit Girdhar et al. “ActionVLAD: Learning spatio-temporal aggregation for action classification” computer vision and pattern recognition(2017): n. pag.
+
 ## 1. Motivation & Contribution
 
 ### 1.1 Motivation
@@ -16,6 +18,8 @@
 
 ## 2.1 VLAD(vector of locally aggregated descriptors,局部特征聚集描述子)
 
+> Herve Jegou et al. “Aggregating local descriptors into a compact image representation” computer vision and pattern recognition(2010): n. pag.
+
 - VLAD 和 BoW、Fisher Vector 等都是图像检索领域的经典方法。
 - 通常在传统方法中我们会获得一系列的局部特征（SIFT、SURF、ORB）之类，假设为 N 个 D 维的局部特征（通常 N 可能比较大，而且每幅图特征多少不一，N 可能数量也不一定），我们希望通过这N\*D维特征获得一个可以表示全局K\*D维特征的方法（通常K是我们指定的数目，例如128维）。VLAD 的主要流程如下：
     1. 对全部 N*D 维局部特征进行 K-Means 聚类获得 K 个聚类中心，记为$C_k$
@@ -25,6 +29,8 @@
 - VLAD是一个将若干局部特征压缩为一个特定大小全局特征的方法，通过聚类，实现了将特征降维，同时用特征与聚类中心的差值作为新的特征值。
 
 ## 2.2 NetVLAD
+
+> Relja Arandjelovic et al. “NetVLAD: CNN architecture for weakly supervised place recognition” IEEE Transactions on Pattern Analysis and Machine Intelligence(2015): n. pag.
 
 - NetVLAD算法对VLAD的改进有两点：
   - 将局部特征描述子的聚合k-means改成了1 x 1卷积
