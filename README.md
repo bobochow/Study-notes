@@ -20,6 +20,7 @@
 12. RAFT.md
 13. STRM.md
 14. ActionVLAD.md
+15. CoViAR.md
 
 ## 思维导图
 
