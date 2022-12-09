@@ -21,6 +21,8 @@
 13. STRM.md
 14. ActionVLAD.md
 15. CoViAR.md
+16. TRN.md
+17. ECO.md
 
 ## 思维导图
 
