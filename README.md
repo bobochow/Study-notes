@@ -25,7 +25,6 @@
 17. ECO.md
 18. TSM.md
 19. FlowNet.md
-20. TPN.md
 
 ## 思维导图
 
