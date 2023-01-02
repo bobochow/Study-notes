@@ -12,7 +12,7 @@
 
 2. PWC-Net的特点：紧凑（compact），比 FlowNet2.0 小 17 倍。
 
-   ![71](images\71.png)
+   ![71](\images\71.png)
 
 ## 二、PWC-Net
 
