@@ -31,6 +31,8 @@
 23. MLP-3D.md
 24. TEA.md
 25. AcT.md
+26. X3D.md
+27. TDN.md
 
 ## 思维导图
 
