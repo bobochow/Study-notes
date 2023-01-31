@@ -34,6 +34,8 @@
 26. X3D.md
 27. TDN.md
 28. 分组时空聚合（GST）.md
+29. OmniSource.md
+30. VideoMAE.md
 
 ## 思维导图
 
