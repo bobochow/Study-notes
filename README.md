@@ -36,6 +36,8 @@
 28. 分组时空聚合（GST）.md
 29. OmniSource.md
 30. VideoMAE.md
+31. UniFormerV1.md
+32. UniFormerV2.md
 
 ## 思维导图
 
