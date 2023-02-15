@@ -38,6 +38,8 @@
 30. VideoMAE.md
 31. UniFormerV1.md
 32. UniFormerV2.md
+33. 联合原子动作建模.md
+34. FineGym.md
 
 ## 思维导图
 
