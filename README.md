@@ -40,6 +40,9 @@
 32. UniFormerV2.md
 33. 联合原子动作建模.md
 34. FineGym.md
+35. 弱监督原子动作模型.md
+36. InternVideo.md
+37. TubeViT.md
 
 ## 思维导图
 
