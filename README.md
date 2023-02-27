@@ -43,6 +43,7 @@
 35. 弱监督原子动作模型.md
 36. InternVideo.md
 37. TubeViT.md
+38. Co3D CNN.md
 
 ## 思维导图
 
