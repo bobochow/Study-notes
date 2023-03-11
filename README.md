@@ -44,6 +44,7 @@
 36. InternVideo.md
 37. TubeViT.md
 38. Co3D CNN.md
+39. FineDiving.md
 
 ## 思维导图
 
