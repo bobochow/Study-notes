@@ -45,6 +45,7 @@
 37. TubeViT.md
 38. Co3D CNN.md
 39. FineDiving.md
+40. 有向图神经网络（DGNN）骨架识别.md
 
 ## 思维导图
 
