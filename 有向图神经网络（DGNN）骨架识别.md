@@ -62,7 +62,7 @@
 ![133](images/133.png)
 
 - Cross-subject（CS）：在不同的人之间识别人体骨骼动作。
-- Cross-view（CS）：在不同的摄像机视角下识别人体骨骼动作。
+- Cross-view（CV）：在不同的摄像机视角下识别人体骨骼动作。
 
 # 附：Convolution-free (CF) 网络总结
 
