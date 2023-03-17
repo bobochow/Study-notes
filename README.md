@@ -46,6 +46,8 @@
 38. Co3D CNN.md
 39. FineDiving.md
 40. 有向图神经网络（DGNN）骨架识别.md
+41. Survey on Sports Video.md
+42. TQN.md
 
 ## 思维导图
 
