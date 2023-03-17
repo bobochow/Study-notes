@@ -31,6 +31,8 @@ $$
 
 ![2](images/tqn2.png)
 
+![7](images/tqn7.png)
+
 #### 2.1.2 3D Visual backbone
 
 - 本文采用S3D作为特征提取8帧大小的连续互不重叠clip的一维特征向量，以便于输入Transformer DEcoder。
