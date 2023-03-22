@@ -50,6 +50,7 @@
 42. TQN.md
 43. CoDT.md
 44. Shift-GCN.md
+45. Dual-path Adaptation.md
 
 ## 思维导图
 
