@@ -51,6 +51,7 @@
 43. CoDT.md
 44. Shift-GCN.md
 45. Dual-path Adaptation.md
+46. PETL.md
 
 ## 思维导图
 
