@@ -52,6 +52,7 @@
 44. Shift-GCN.md
 45. Dual-path Adaptation.md
 46. PETL.md
+47. MVD.md
 
 ## 思维导图
 
