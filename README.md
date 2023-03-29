@@ -53,6 +53,7 @@
 45. Dual-path Adaptation.md
 46. PETL.md
 47. MVD.md
+48. MAR.md
 
 ## 思维导图
 
