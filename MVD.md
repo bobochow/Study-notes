@@ -14,13 +14,16 @@
 
 ### 2.1 Masked Video Distillation
 
-- Encoder采用了与VideoMAE相似的结构，不同之处是3D Patch 的尺寸为$2\times16\times16$，这是因为采用了两个相同结构不同参数的Decoder，无法处理太长的时间序列。
+- Encoder采用了与VideoMAE相似的结构，3D Patch 的尺寸也为$2\times16\times16$，这是为了防止相邻帧间的信息泄露，缺点是token数量依旧很多，模型依然比较大。
+- 通过共同训练的方式，相对减少了训练时间，但是提点并不多，主要来自于两种不同模态的叠加，如何将图像预训练模型和视频预训练模型更好地结合到一起需要进一步思考。
 
 ### 2.2 Algorithm
 
 ![2](images/MVD2.png)
 
 ## 3. Experiment
+
+![5](images/MVD5.png)
 
 ![3](images/MVD3.png)
 
