@@ -54,6 +54,7 @@
 46. PETL.md
 47. MVD.md
 48. MAR.md
+49. VideoMAEV2.md
 
 ## 思维导图
 
