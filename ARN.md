@@ -44,9 +44,11 @@
 
 3. 二阶池化（g）：
    $$
-   \boldsymbol{\Psi}=\eta\left(\frac{1}{N} \sum_{n=1}^N \boldsymbol{\phi}_n \boldsymbol{\phi}_n^T\right)=\eta\left(\frac{1}{N} \boldsymbol{\Phi} \boldsymbol{\Phi}^T\right) \\ 其中\quad \eta(\mathbf{X})=\frac{1-\exp (\sigma \mathbf{X})}{1+\exp (\sigma \mathbf{X})}\quad 用于计算幂归一化\\
-   输入\boldsymbol{\Phi} :C*N，N=H*W*T\\
-   输出\boldsymbol{\Psi}:C*C
+   \boldsymbol{\Psi}=\eta(\frac{1}{N} \sum_{n=1}^{N} \phi_{n} 
+   \phi_{n}^{T})=\eta(\frac{1}{N} \Phi \Phi^{T}) \\ 
+   其中\quad \eta(\mathbf{X})=\frac{1-\exp (\sigma \mathbf{X})}{1+\exp (\sigma \mathbf{X})}\quad 用于计算幂归一化\\
+输入\boldsymbol{\Phi} :C\*N，N=H\*W\*T\\
+输出\boldsymbol{\Psi}:C\*C
    $$
 
 4. 时空自监督：通过学习如何在时间和空间上对输入视频进行自重建来进行训练。
