@@ -58,6 +58,7 @@
 50. ARN.md
 51. GTDNet.md
 52. Decomposed Cross-modal Distillation.md
+53. UMT.md
 
 ## 思维导图
 
