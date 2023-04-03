@@ -55,6 +55,8 @@
 47. MVD.md
 48. MAR.md
 49. VideoMAEV2.md
+50. ARN.md
+51. GTDNet.md
 
 ## 思维导图
 
