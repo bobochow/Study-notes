@@ -57,6 +57,7 @@
 49. VideoMAEV2.md
 50. ARN.md
 51. GTDNet.md
+52. Decomposed Cross-modal Distillation.md
 
 ## 思维导图
 
