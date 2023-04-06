@@ -59,6 +59,7 @@
 51. GTDNet.md
 52. Decomposed Cross-modal Distillation.md
 53. UMT.md
+54. TPS.md
 
 ## 思维导图
 
