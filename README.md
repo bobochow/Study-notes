@@ -61,6 +61,8 @@
 53. UMT.md
 54. TPS.md
 55. TokenShift.md
+56. BIKE.md
+57. AdaMAE.md
 
 ## 思维导图
 
