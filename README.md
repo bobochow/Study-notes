@@ -63,6 +63,7 @@
 55. TokenShift.md
 56. BIKE.md
 57. AdaMAE.md
+58. SIFA.md
 
 ## 思维导图
 
