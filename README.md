@@ -64,6 +64,7 @@
 56. BIKE.md
 57. AdaMAE.md
 58. SIFA.md
+59. Vita-CLIP.md
 
 ## 思维导图
 
