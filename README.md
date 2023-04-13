@@ -66,6 +66,8 @@
 58. SIFA.md
 59. Vita-CLIP.md
 60. ActionCLIP.md
+61. X-CLIP.md
+62. EffiPrompt.md
 
 ## 思维导图
 
