@@ -65,6 +65,7 @@
 57. AdaMAE.md
 58. SIFA.md
 59. Vita-CLIP.md
+60. ActionCLIP.md
 
 ## 思维导图
 
