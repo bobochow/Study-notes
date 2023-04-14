@@ -68,6 +68,7 @@
 60. ActionCLIP.md
 61. X-CLIP.md
 62. EffiPrompt.md
+63. EVL.md
 
 ## 思维导图
 
