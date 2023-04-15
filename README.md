@@ -69,6 +69,7 @@
 61. X-CLIP.md
 62. EffiPrompt.md
 63. EVL.md
+64. SparseFormer.md
 
 ## 思维导图
 
