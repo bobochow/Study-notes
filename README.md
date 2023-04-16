@@ -70,6 +70,7 @@
 62. EffiPrompt.md
 63. EVL.md
 64. SparseFormer.md
+65. ViViT.md
 
 ## 思维导图
 
