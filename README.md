@@ -73,9 +73,13 @@
 65. ViViT.md
 66. MTV.md
 
+## 笔记图片
+
+- 使用[PicGo](https://picgo.github.io/PicGo-Doc/zh/guide/)图床上传图片
+
 ## 思维导图
 
-VSCODE安装markmap插件，编写markdown文件生成思维导图的html文件。安装open in browser插件打开html文件。
+- VSCODE安装markmap插件，编写markdown文件生成思维导图的html文件。安装open in browser插件打开html文件。
 
 ## 论文十问
 
