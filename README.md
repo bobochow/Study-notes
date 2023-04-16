@@ -71,6 +71,7 @@
 63. EVL.md
 64. SparseFormer.md
 65. ViViT.md
+66. MTV.md
 
 ## 思维导图
 
