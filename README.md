@@ -74,6 +74,7 @@
 66. MTV.md
 67. PoseC3D.md
 68. DirecFormer.md
+69. MViT.md
 
 ## 笔记图片
 
