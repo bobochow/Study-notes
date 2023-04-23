@@ -66,7 +66,7 @@
 58. SIFA.md
 59. Vita-CLIP.md
 60. ActionCLIP.md
-61. X-CLIP.md
+61. X-CLIP(video recognition).md
 62. EffiPrompt.md
 63. EVL.md
 64. SparseFormer.md
@@ -77,6 +77,7 @@
 69. MViT.md
 70. MViT V2.md
 71. Swin Transformrer.md
+72. Text4Vis.md
 
 ## 笔记图片
 
