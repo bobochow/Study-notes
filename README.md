@@ -78,6 +78,7 @@
 70. MViT V2.md
 71. Swin Transformrer.md
 72. Text4Vis.md
+73. X-CLIP(video retrieval).md
 
 ## 笔记图片
 
