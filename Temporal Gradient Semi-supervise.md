@@ -36,11 +36,11 @@
 
    （2）对于无标签的数据，使模型对不同增强强度（α、Α）的相同未标记数据样本产生一致的预测。
    $$
-   \mathcal{C}=\left\{x_j \mid \max f_\theta\left(\alpha\left(x_j\right)\right) \geq \gamma\right\}
+   \mathcal{C}=\left( x_j \mid \max f_\theta\left(\alpha\left(x_j\right)\right) \geq \gamma \right)
    $$
 
    $$
-   \mathcal{L}_u=-\frac{1}{B_u} \sum_{x_j \in \mathcal{C}} \hat{y}_j \log f_\theta\left(\mathcal{A}\left(x_j\right)\right)
+   \mathcal{L}_u=-\frac{1}{B_u} \sum\hat{y}_j \log f\left(\mathcal{A}\left(x_j\right)\right)
    $$
 
 3. 时间梯度并行框架：
