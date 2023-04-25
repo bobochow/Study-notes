@@ -79,6 +79,8 @@
 71. Swin Transformrer.md
 72. Text4Vis.md
 73. X-CLIP(video retrieval).md
+74. TCL.md
+75. Temporal Gradient Semi-supervise.md
 
 ## 笔记图片
 
