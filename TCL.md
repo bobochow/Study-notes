@@ -28,18 +28,20 @@
 
 2. 对于无标记的样本，采样得到高速帧率的 auxiliary pathway，在使用相同权重的 3D 卷积得到伪标签。最大化以两种不同速度播放的同一视频的编码表示之间的相似性，以及最小化以不同速度播放的不同视频之间的相似性得到实例对比损失：
    $$
-   \mathcal{L}_{i c}\left(U_f^i, U_s^i\right)=-\log \frac{h\left(g\left(U_f^i\right), g\left(U_s^i\right)\right)}{h\left(g\left(U_f^i\right), g\left(U_s^i\right)\right)+\sum_{\substack{k=1 \\ p \in\{s, f\}}}^B \mathbb{1}_{\{k \neq i\}} h\left(g\left(U_f^i\right), g\left(U_p^k\right)\right)}
+   \mathcal{L}_{i c}\left(U_f^i, U_s^i\right)=-\log \frac{h\left(g\left(U_f^i\right), g\left(U_s^i\right)\right)}{h\left(g\left(U_f^i\right), g\left(U_s^i\right)\right)
+   +\sum h\left(g\left(U_f^i\right), g\left(U_p^k\right)\right)}
    $$
 
 3. 组对比损失：在没有类标签的情况下直接在不同视频实例之间应用实例对比损失不会考虑高级动作语义。这种策略可能会使包含相同动作的视频学习得到不同的表示。
 
    伪标签的类中心：
    $$
-   R_p^l=\frac{\sum_{i=1}^B \mathbb{1}_{\left\{\hat{y}_p^i=l\right\}} g\left(U_p^i\right)}{T}
+   R_p^l=\frac{\sum \mathbb{1} g\left(U_p^i\right)}{T}
    $$
    组对比损失：
    $$
-   \mathcal{L}_{g c}\left(R_f^l, R_s^l\right)=-\log \frac{h\left(R_f^l, R_s^l\right)}{h\left(R_f^l, R_s^l\right)+\sum_{\substack{m=1 \\ p \in\{s, f\}}}^C \mathbb{1}_{\{m \neq l\}} h\left(R_f^l, R_p^m\right)}
+   \mathcal{L}_{g c}\left(R_f^l, R_s^l\right)=-\log \frac{h\left(R_f^l, R_s^l\right)}{h\left(R_f^l, R_s^l\right)
+   +\sum \mathbb{1} h\left(R_f^l, R_p^m\right)}
    $$
 
 4. 自监督预训练：在半监督之前将整个标记数据和未标记数据 Dl ∪ Du 仅视为未标记数据，并使用实例对比损失来鼓励在两个路径中学习的表示之间的一致性。
