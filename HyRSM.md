@@ -26,7 +26,7 @@
 
    （2）这些对齐策略可能会在**未对齐**的情况下失败。如果时间序列数据存在**偏差**或不对齐，即使使用距离或特征对齐等技术进行对齐，也不能消除这些不对齐导致的误差。在这种情况下，需要先对数据进行预处理或对齐，再应用时间对齐策略进行分类。
 
-   ![158](images/158.png)
+   ![158](https://gitee.com/zhenyu-yang20/network-images/raw/master/158.png)
 
 4. 研究贡献：
 
@@ -40,7 +40,7 @@
 
 1. 模型框架：
 
-   ![159](images/159.png)
+   ![159](https://gitee.com/zhenyu-yang20/network-images/raw/master/159.png)
 
 2. 混合关系模块：通过在情景任务中聚合**跨视频表示的语义信息** G 来改进特征 fi。
    $$
@@ -64,4 +64,4 @@
 
 ## 三、结果
 
-![161](images/161.png)
+![161](https://gitee.com/zhenyu-yang20/network-images/raw/master/161.png)
