@@ -59,7 +59,7 @@
 
    使用双向均值豪斯多夫度量：
    $$
-   \mathcal{D}_b=\frac{1}{N_i} \sum_{\tilde{f}_i^a \in \tilde{f}_i}\left(\min _{\tilde{f}_q^b \in \tilde{f}_q}\left\|\tilde{f}_i^a-\tilde{f}_q^b\right\|\right)+\frac{1}{N_q} \sum_{\tilde{f}_q^b \in \tilde{f}_q}\left(\min _{\tilde{f}_i \in \tilde{f}_i}\left\|\tilde{f}_q^b-\tilde{f}_i^a\right\|\right)
+   \mathcal{D}_b=\frac{1}{N_i} \sum\left(\min _{\tilde{f}_q^b \in \tilde{f}_q}\left\|\tilde{f}_i^a-\tilde{f}_q^b\right\|\right)+\frac{1}{N_q} \sum\left(\min _{\tilde{f}_i \in \tilde{f}_i}\left\|\tilde{f}_q^b-\tilde{f}_i^a\right\|\right)
    $$
 
 ## 三、结果
