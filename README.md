@@ -82,6 +82,7 @@
 74. TCL.md
 75. Temporal Gradient Semi-supervise.md
 76. SIFAR.md
+77. HyRSM.md
 
 ## 笔记图片
 
