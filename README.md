@@ -83,6 +83,7 @@
 75. Temporal Gradient Semi-supervise.md
 76. SIFAR.md
 77. HyRSM.md
+78. Shift Chunk Transformer.md
 
 ## 笔记图片
 
