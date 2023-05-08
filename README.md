@@ -84,6 +84,7 @@
 76. SIFAR.md
 77. HyRSM.md
 78. Shift Chunk Transformer.md
+79. Frame Flexible Network.md
 
 ## 笔记图片
 
