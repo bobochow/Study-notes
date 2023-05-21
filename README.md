@@ -85,6 +85,7 @@
 77. HyRSM.md
 78. Shift Chunk Transformer.md
 79. Frame Flexible Network.md
+80. ViFi CLIP.md
 
 ## 笔记图片
 
