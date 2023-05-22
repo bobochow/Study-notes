@@ -26,18 +26,18 @@
 
 1. 模型结构：
 
-   <img src="images/165.png" alt="165" style="zoom: 67%;" />
+   <img src="https://gitee.com/zhenyu-yang20/network-images/raw/master/165.png" alt="165" style="zoom: 67%;" />
 
 2. 时间转换模块（TTM）：缓解动作持续时间未对准问题。包含定位网络 L 和时间仿射变换 T。
    $$
    \hat{f_X}=\mathbf{T}_\phi\left(f_X\right), \phi=\mathbf{L}\left(f_X\right)\\
    \phi是生成的变形参数
    $$
-   <img src="images/166.png" alt="166" style="zoom:67%;" />
+   <img src="https://gitee.com/zhenyu-yang20/network-images/raw/master/166.png" alt="166" style="zoom:67%;" />
 
 3. 时间协调模块（TC）：TTM 只能处理线性的时间错位，对于非线性的时间错位，在时间维度上作通道注意力：
 
-   <img src="images/167.png" alt="167" style="zoom: 33%;" />
+   <img src="https://gitee.com/zhenyu-yang20/network-images/raw/master/167.png" alt="167" style="zoom: 33%;" />
    $$
    M=\operatorname{Softmax}\left(\frac{\left(W_k \cdot G\left(\hat{f}_s\right)\right)\left(W_q \cdot G\left(\hat{f}_q\right)\right)^T}{\sqrt{\operatorname{dim}}}\right)\\
    \tilde{f}_q=M \cdot\left(W_v \cdot G\left(\hat{f}_q\right)\right)
@@ -45,8 +45,8 @@
 
 4. 空间协调模块（SC）：减少动作演变中的空间变化，如演员位置。包括两个步骤：轻量级偏移预测和偏移掩码生成。
 
-   <img src="images/168.png" alt="168" style="zoom:60%;" />
+   <img src="https://gitee.com/zhenyu-yang20/network-images/raw/master/168.png" alt="168" style="zoom:60%;" />
 
 ## 三、结果
 
-![169](images/169.png)
+![169](https://gitee.com/zhenyu-yang20/network-images/raw/master/169.png)
