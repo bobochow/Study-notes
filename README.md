@@ -87,7 +87,8 @@
 79. Frame Flexible Network.md
 80. ViFi CLIP.md
 81. ACR.md
-82. U-Tuning.md
+82. TA2N.md
+83. U-Tuning
 
 ## 笔记图片
 
