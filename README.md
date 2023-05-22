@@ -86,6 +86,8 @@
 78. Shift Chunk Transformer.md
 79. Frame Flexible Network.md
 80. ViFi CLIP.md
+81. ACR.md
+82. TA2N.md
 
 ## 笔记图片
 
