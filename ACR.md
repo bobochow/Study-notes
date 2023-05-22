@@ -38,33 +38,23 @@
 
 1. 模型结构：
 
-   <img src="images/162.png" alt="162" style="zoom: 50%;" />
+   <img src="https://gitee.com/zhenyu-yang20/network-images/raw/master/162.png" alt="162" style="zoom: 50%;" />
 
 2. 对于有标记的样本：
 
    （1）标准分支：交叉熵。用于学习优质的特征提取器。
 
    （2）平衡分支：使用平衡误差。用于学习类平衡的估计器。
-   $$
-   \mathcal{L}_{\text {b-labeled }}=-\sum_{i=1}^N \log \frac{e^{\tilde{f}_{y_i^{(l)}}\left(x_i^{(l)}\right)+\tau \cdot \log \pi_{y_i^{(l)}}}}{\sum_{c=1}^C e^{\tilde{f}_c\left(x_i^{(l)}\right)+\tau \cdot \log \pi_c}}
-   $$
+   ![163](https://gitee.com/zhenyu-yang20/network-images/raw/master/ACR1.png)
 
 3. 对于无标记的样本：偏向于少数类的伪标签可以有利于分类器的学习，而近似真实分布的伪标签分布有助于学习更好的特征提取器。
 
    先使用标准分支提取特征，得到伪标签。再将其与增强后的平衡分支进行一致性最小化损失。
-   $$
-   \tilde{q}\left(x_j^{(u)}\right)=\arg \max f\left(x_j^{(u)}\right)-\tau \cdot \log \pi\\
-   \mathcal{L}_{\mathrm{b} \text {-con }}=\sum_{j=1}^M \tilde{M}\left(x_j^{(u)}\right) \ell\left(\tilde{f}\left(\mathcal{A}\left(x_j^{(u)}\right)\right), \tilde{q}_j\right)
-   $$
+   ![163](https://gitee.com/zhenyu-yang20/network-images/raw/master/ACR2.png)
    同时使用平衡分支进行未标记数据集的类自适应优化。通过双向克里散度平衡分布，自适应消除多数类的偏见。
-   $$
-   \text {dist}_{\mathrm{con}}=\frac{1}{2}\left(D_{K L}\left(\pi_{\mathrm{con}} \| \pi_{\mathrm{est}}\right)+D_{K L}\left(\pi_{\mathrm{est}} \| \pi_{\mathrm{con}}\right)\right) \\
-   \operatorname{dist}_{\mathrm{uni}}=\frac{1}{2}\left(D_{K L}\left(\pi_{\mathrm{uni}} \| \pi_{\mathrm{est}}\right)+D_{K L}\left(\pi_{\mathrm{est}} \| \pi_{\mathrm{uni}}\right)\right) \\
-   \text {dist}_{\mathrm{rev}}=\frac{1}{2}\left(D_{K L}\left(\pi_{\mathrm{rev}} \| \pi_{\mathrm{est}}\right)+D_{K L}\left(\pi_{\mathrm{est}} \| \pi_{\mathrm{rev}}\right)\right)\\
-   \tau(t)=\frac{2 e^{d i s t_{\mathrm{con}}^{(t-1)}}}{e^{d i s t_{\mathrm{con}}^{(t-1)}}+e^{d i s t_{\mathrm{uni}}^{(t-1)}}+e^{d i s t_{\mathrm{rev}}^{(t-1)}}}
-   $$
-   ![163](images/163.png)
+   ![163](https://gitee.com/zhenyu-yang20/network-images/raw/master/ACR3.png)
+   ![163](https://gitee.com/zhenyu-yang20/network-images/raw/master/163.png)
 
 ## 三、结果
 
-![164](images/164.png)
+![164](https://gitee.com/zhenyu-yang20/network-images/raw/master/164.png)
