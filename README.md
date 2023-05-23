@@ -88,7 +88,8 @@
 80. ViFi CLIP.md
 81. ACR.md
 82. TA2N.md
-83. U-Tuning
+83. U-Tuning.md
+84. STAN.md
 
 ## 笔记图片
 
