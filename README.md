@@ -90,6 +90,7 @@
 82. TA2N.md
 83. U-Tuning.md
 84. STAN.md
+85. SFA-ViViT.md
 
 ## 笔记图片
 
