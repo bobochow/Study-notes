@@ -91,6 +91,7 @@
 83. U-Tuning.md
 84. STAN.md
 85. SFA-ViViT.md
+86. Hiera.md
 
 ## 笔记图片
 
