@@ -92,6 +92,7 @@
 84. STAN.md
 85. SFA-ViViT.md
 86. Hiera.md
+87. ObjectViViT.md
 
 ## 笔记图片
 
