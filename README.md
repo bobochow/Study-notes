@@ -93,6 +93,7 @@
 85. SFA-ViViT.md
 86. Hiera.md
 87. ObjectViViT.md
+88. PLAR.md
 
 ## 笔记图片
 
