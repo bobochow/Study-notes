@@ -95,6 +95,7 @@
 87. ObjectViViT.md
 88. PLAR.md
 89. ATM.md
+90. UPR-Net.md
 
 ## 笔记图片
 
