@@ -2,7 +2,7 @@
 
 ## 介绍
 
-主要上传阅读论文后的阅读笔记，便于互相学习交流，也方便日后写作论文时整理资料
+主要上传阅读论文后的阅读笔记，便于互相学习交流
 
 ## Notes List
 
@@ -94,14 +94,11 @@
 86. Hiera.md
 87. ObjectViViT.md
 88. PLAR.md
+89. ATM.md
 
 ## 笔记图片
 
 - 使用[PicGo](https://picgo.github.io/PicGo-Doc/zh/guide/)图床上传图片
-
-## 思维导图
-
-- VSCODE安装markmap插件，编写markdown文件生成思维导图的html文件。安装open in browser插件打开html文件。
 
 ## 论文十问
 
