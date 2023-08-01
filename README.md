@@ -96,6 +96,8 @@
 88. PLAR.md
 89. ATM.md
 90. UPR-Net.md
+91. MAE-WSP.md
+92. M3Video.md
 
 ## 笔记图片
 
