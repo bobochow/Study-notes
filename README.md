@@ -98,6 +98,7 @@
 90. UPR-Net.md
 91. MAE-WSP.md
 92. M3Video.md
+93. AFNet.md
 
 ## 笔记图片
 
