@@ -99,6 +99,7 @@
 91. MAE-WSP.md
 92. M3Video.md
 93. AFNet.md
+94. CLIP-FSAR.md
 
 ## 笔记图片
 
