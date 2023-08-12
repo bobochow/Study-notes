@@ -102,6 +102,7 @@
 94. CLIP-FSAR.md
 95. MoLo.md
 96. OTAM.md
+97. HyRSM++.md
 
 ## 笔记图片
 
