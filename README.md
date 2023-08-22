@@ -107,6 +107,7 @@
 99. ITANet.md
 100. FSVC-ATA.md
 101. A Closer Look at FSVC.md
+102. MA-CLIP.md
 
 ## 笔记图片
 
