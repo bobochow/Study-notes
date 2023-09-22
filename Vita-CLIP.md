@@ -26,6 +26,7 @@
 #### 2.1.1 Summary Token
 
 - Summary token 用于总结全局分类信息后增强每帧的分类信息，通过一层线性层和一层MHSA实现。
+- 与X-CLIP中的cross-frame attention一致
 
 $$\begin{aligned}\mathbf{Z}_{0, p r o j}^{(l-1)} & =\mathbf{P}_{\text {sum }}^T \mathbf{Z}_0^{(l-1)} \\ S^{(l)} & =\operatorname{MHSA}\left(\operatorname{LN}\left(\mathbf{Z}_{0, \text { proj }}^{(l-1)}\right)\right)+\mathbf{Z}_{0, \text { proj }}^{(l-1)}\end{aligned}$$
 
