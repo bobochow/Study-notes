@@ -110,6 +110,8 @@
 102. MA-CLIP.md
 103. Knowledge Prompting for Few-shot Action Recognition.md
 104. ST-Sampler4FSAR.md
+105. SimDA.md
+106. Token Merging.md
 
 ## 笔记图片
 
