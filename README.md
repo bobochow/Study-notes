@@ -112,6 +112,7 @@
 104. ST-Sampler4FSAR.md
 105. SimDA.md
 106. Token Merging.md
+107. Semantic-aware Temporal Accumulation Token Pruning.md
 
 ## 笔记图片
 
