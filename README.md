@@ -113,6 +113,7 @@
 105. SimDA.md
 106. Token Merging.md
 107. Semantic-aware Temporal Accumulation Token Pruning.md
+108. Adaptive Token Sampling.md
 
 ## 笔记图片
 
