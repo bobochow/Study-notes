@@ -117,6 +117,7 @@
 109. ZeroI2V.md
 110. Res-Tuning-Bypass.md
 111. Scaling & Shifting.md
+112. Side4Video.md
 
 ## 笔记图片
 
